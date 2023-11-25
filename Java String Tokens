@@ -9,7 +9,7 @@ public class Solution {
         // Write your code here.
         s=s.trim();
         //System.out.println(s);
-        if(s.length()>=1 && s.length()<=Math.pow(10,5)*4){
+        if(s.length()>0 && s.length()<=Math.pow(10,5)*4){
             String[] regStrings = s.split("['!?,._@ ]+");
             // print number of tokens
             System.out.println(regStrings.length);
@@ -17,6 +17,9 @@ public class Solution {
             for(String str:regStrings){
                 System.out.println(str);
             }
+        }
+        else{
+            System.out.println("0");
         }
         scan.close();
     }
